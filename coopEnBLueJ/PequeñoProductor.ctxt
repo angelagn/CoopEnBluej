@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Peque\u00F1oProductor
+comment0.text=\n\ Write\ a\ description\ of\ class\ Peque\u00F1oProductor\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=nombreProd\ nombreArticulo\ hectareas\ cantidadArticulos
+comment1.target=Peque\u00F1oProductor(java.lang.String,\ java.lang.String,\ double,\ int)
+comment1.text=\ Se\ llama\ al\ constructor\ de\ la\ super\ clase\ Productor\ a\ traves\ de\ la\ palabra\ reservada\ super\n
+comment2.params=
+comment2.target=java.lang.Integer\ getYear()
+comment2.text=\ Funcion\ que\ calcula\ el\ ultimo\ digito\ del\ a\u00F1o\ \n
+numComments=3

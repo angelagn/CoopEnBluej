@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=PequenaLogistica
+comment0.text=\n\ Write\ a\ description\ of\ class\ PequenaLogistica\ here.\n
+comment1.params=distanciaKm\ esPerecedero
+comment1.target=PequenaLogistica(int,\ boolean)
+comment1.text=\ Constructor\n
+comment2.params=
+comment2.target=int\ transportar()
+comment2.text=Se\ sobreescribe\ el\ metodo\ transportar\ \n\ para\ ajustar\ a\ la\ peque\u00F1a\ logistica\n
+comment3.params=
+comment3.target=int\ calcularCoste()
+numComments=4

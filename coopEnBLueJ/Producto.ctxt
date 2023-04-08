@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Producto
+comment0.text=\n\ Clase\ Producto\ que\ contiene\ las\ caracteristicas\ necesarias\ de\ cada\ producto\ para\ que\ pueda\ ser\ gestionado\ en\ la\ cooperativa.\n\ \n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment1.params=nombreArticulo\ precioArticulo\ pesoArticulo\ esPerecederoArticulo
+comment1.target=Producto(java.lang.String,\ double,\ double,\ boolean)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Producto\n
+comment2.params=
+comment2.target=java.lang.String\ getNombreProducto()
+comment2.text=Metodos\ get\n
+comment3.params=
+comment3.target=double\ getPrecioProducto()
+comment4.params=
+comment4.target=double\ getPesoProducto()
+comment5.params=
+comment5.target=boolean\ getEsPerecederoProducto()
+comment6.params=
+comment6.target=java.util.Date\ getFechaCompra()
+comment7.params=
+comment7.target=double\ getTotalKg()
+comment7.text=Convierte\ las\ toneladas\ a\ kilogramos\n
+comment8.params=fechaCompra
+comment8.target=void\ setFechaCompra(java.util.Date)
+comment8.text=Metodos\ set\n
+numComments=9

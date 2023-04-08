@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=GestionProductos
+comment0.text=\n\ Clase\ Producto\ que\ contiene\ las\ caracteristicas\ necesarias\ de\ cada\ producto\ para\ que\ pueda\ ser\ gestionado\ en\ la\ cooperativa.\n\ \n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment1.params=
+comment1.target=GestionProductos()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GestionProductos\n
+comment2.params=precioRefKg
+comment2.target=double\ CobrarACliente(double)
+comment2.text=\ Funcion\ que\ aumenta\ el\ 15%\ al\ precio\ del\ cliente\ final\ segun\ el\ precio\ de\ referencia\ por\ kilogramo\ del\ producto\n
+comment3.params=precioRefKg
+comment3.target=double\ CobrarDistribuidor(double)
+comment3.text=\ Funcion\ que\ aumenta\ el\ 5%\ al\ precio\ del\ distribuidor\ segun\ el\ precio\ de\ referencia\ del\ producto\n
+comment4.params=precioRefKg\ kilos
+comment4.target=double\ PagarAProductor(double,\ double)
+comment4.text=Funcion\ que\ calcula\ el\ pago\ que\ recibe\ cada\ productor\n
+numComments=5

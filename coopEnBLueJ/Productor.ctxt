@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Productor
+comment0.text=\n\ Write\ a\ description\ of\ class\ Productor\ here.\n\ \n\ @author\ (Angela\ Guzman)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=nombreProd\ nombreArticulo\ hectareas\ cantidadArticulos
+comment1.target=Productor(java.lang.String,\ java.lang.String,\ double,\ int)
+comment1.text=\ Constructor\ para\ objetos\ de\ la\ clase\ Productor\n
+numComments=2

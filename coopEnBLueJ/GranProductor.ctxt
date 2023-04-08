@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=GranProductor
+comment0.text=\n\ Write\ a\ description\ of\ class\ GranProductor\ here.\n
+comment1.params=nombreProd\ nombreArticulo\ hectareas\ cantidadArticulos
+comment1.target=GranProductor(java.lang.String,\ java.lang.String,\ double,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GranProductor\n
+numComments=2
