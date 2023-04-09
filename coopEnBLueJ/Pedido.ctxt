@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Pedido
+comment0.text=\n\ Write\ a\ description\ of\ class\ Pedido\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=productos
+comment1.target=Pedido(Producto[])
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GestionPedidos\n
+comment2.params=
+comment2.target=Producto[]\ getProductos()
+comment2.text=\n
+comment3.params=productos
+comment3.target=void\ setProductos(Producto[])
+comment3.text=\n
+numComments=4
