@@ -5,40 +5,62 @@ public class GranLogistica extends Logistica
        private boolean esPerecedero;
        private int tramos;
        private double costeProducto;
+       private String tramosString;
+       private String ciudad;
+       private int restoKm;
+       private double coste;
+       private double pesoPedido;
+       private Producto[] productosPedido; //Inicializa el array de productos pedido
+       
        
     /** Constructor
      */
-    public GranLogistica(int distanciaKm,boolean esPerecedero, double precioProducto)
+    public GranLogistica(int distanciaKm,boolean esPerecedero, double precioProducto, 
+                double pesoPedido, String ciudad)
     {
         // initialise instance variables
-        super(distanciaKm, esPerecedero);
+        super(distanciaKm, esPerecedero, pesoPedido);
        this.distanciaKm = getDistancia();
        this.esPerecedero = getPerecedero();
        this.costeProducto = precioProducto;
+       this.ciudad = ciudad;
+       this.pesoPedido = pesoPedido;
        
     }
   
     
-    /**Se sobreescribe el metodo transportar 
+    /**Se sobrescribe el metodo transportar 
      * para ajustar a Gran Logistica
      */
        @Override
-    public int transportar(){
-        if (distanciaKm > 100){
-            tramos = distanciaKm%50;
-        }
-        return tramos;
+    public String transportar(){
+        tramos = distanciaKm / 50;
+        restoKm = distanciaKm%50;
+        String tramosString = String.valueOf(tramos);
+        Producto producto = new Producto("nombre", 0.0, 0.0, esPerecedero);
+        if(esPerecedero == true && distanciaKm > 100 ){
+            System.out.println("***********************************\n");    
+            System.out.println("Enviando producto a " + ciudad + ".\n");
+            System.out.println("Distancia a recorrer gran logistica:  " + distanciaKm+ "Km, en " + tramos + " tramos de 50Km.");
+            System.out.println("Distancia a recorrer pequeña logistica:  " + restoKm + "Km.");
+    }
+        
+        return "Distancia " + distanciaKm + "Km, en " + tramos + " tramos de 50Km y " + restoKm + "Km en pequeña logistica";
     }
     
        public int getTramos()
     {
+        tramos = distanciaKm / 50;
         return  this.tramos;
-        
     }
     
          @Override
-    public int calcularCoste(){
-         return 0;
+    public double calcularCosteLogistica(){
+        for(int i= 0 ; i <= getTramos(); i++){ 
+            coste = 0.5 * costeProducto * pesoPedido;
+        }
+        System.out.println("El coste de la logistica es de: " + Math.round(coste) + " Euros.");
+        return coste;
         
     }
     

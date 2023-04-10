@@ -56,7 +56,7 @@ public class Producto
     /**Convierte las toneladas a kilogramos
      */
 
-    public double getTotalKg(){
+    public double getPesoEnKg(){
         pesoEnKg = pesoToneladas * 1000;
         return this.pesoEnKg;
     }

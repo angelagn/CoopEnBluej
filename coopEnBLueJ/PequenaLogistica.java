@@ -7,40 +7,34 @@ public class PequenaLogistica extends Logistica
     // instance variables - replace the example below with your own
        private int distanciaKm;
        private boolean esPerecedero;
+       private double costeFijoKm = 0.3; 
        
     /** Constructor
      */
-    public PequenaLogistica(int distanciaKm,boolean esPerecedero)
+    public PequenaLogistica(int distanciaKm, boolean esPerecedero, double pesoPedido)
     {
         // initialise instance variables
-        super(distanciaKm, esPerecedero);
+       super(distanciaKm, esPerecedero, pesoPedido);
        this.distanciaKm = getDistancia();
        this.esPerecedero = getPerecedero();
-       
+       Producto producto = new Producto("nombre", 0.0, 0.0, true);
     }
     
-    /**Se sobreescribe el metodo transportar 
+    /**Se sobrescribe el metodo transportar 
      * para ajustar a la pequeña logistica
      */
        @Override
-    public int transportar(){
-        if (distanciaKm <= 100){
-            
-        }
-        return 0;
+    public String transportar(){
+        Producto producto = new Producto("nombre", 0.0, 0.0, esPerecedero);
+        if(esPerecedero == true && distanciaKm <= 100 ){
+                System.out.println("Enviando producto a traves de pequeña logistica. \n");
+    }
+        return "Distancia a recorrer:  " + distanciaKm + " Kilometros.";
     }
     
         @Override
-    public int calcularCoste(){
+    public double calcularCosteLogistica(){
          return 0;
         
     }
-    
-    // public void transportarGran(){
-        // if (distanciaKm > 100){
-            
-        // }
-    // }
-
-    
 }

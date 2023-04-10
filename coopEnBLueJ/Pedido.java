@@ -14,9 +14,7 @@ public class Pedido
      */
     public Pedido(Producto[] productos)
     {
-       
         this.productos = productos;
-        
     }
 
     /**

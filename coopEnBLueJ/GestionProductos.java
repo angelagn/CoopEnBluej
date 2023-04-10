@@ -26,7 +26,7 @@ public class GestionProductos
        
        Producto miProducto = new Producto ("Nombre producto", precioRefKg , 0.0, false);
        this.precioRefKg = miProducto.getPrecioProducto();
-       this.kilos = miProducto.getTotalKg();
+       this.kilos = miProducto.getPesoEnKg();
        
         
     }

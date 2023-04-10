@@ -9,7 +9,7 @@ public class GestionPedidos
 {
     /**
      */
-    public void ImprimirListado()
+    public void ProductosPedido()
     {
         Producto[] productos = new Producto[3];
         productos[0] = new Producto("Algodon", 0.90, 3, false);
@@ -24,11 +24,12 @@ public class GestionPedidos
             System.out.println("Producto: " + (i+1) + ":");
             System.out.println("Nombre: " + productosPedido[i].getNombreProducto());
             System.out.println("Precio: " + productosPedido[i].getPrecioProducto());
-            System.out.println("Peso por kilogramo: " + productosPedido[i].getTotalKg());
+            System.out.println("Peso por kilogramo: " + productosPedido[i].getPesoEnKg());
             System.out.println("Producto perecedero: " + productosPedido[i].getEsPerecederoProducto());
             
         }
     }
+    
    
     
 }

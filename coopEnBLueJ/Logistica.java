@@ -11,15 +11,17 @@ public class Logistica
     private int distanciaKm;
     private boolean esPerecedero;
     private String tipoLogistica;
+    private double pesoPedido;
 
     /**
      * Constructor for objects of class Logistica
      */
-    public Logistica(int distanciaKm, boolean esPerecedero)
+    public Logistica(int distanciaKm, boolean esPerecedero, double pesoPedido)
     {
         // initialise instance variables
          this.distanciaKm = distanciaKm;
          this.esPerecedero = esPerecedero;
+         this.pesoPedido = pesoPedido;
     }
     
      public int getDistancia()
@@ -39,11 +41,11 @@ public class Logistica
         this.esPerecedero = esPerecedero;
     }
     
-     public int transportar(){
-         return 0;
+     public String transportar(){
+         return "";
         
     }
-    public int calcularCoste(){
+    public  double calcularCosteLogistica(){
          return 0;
         
     }
