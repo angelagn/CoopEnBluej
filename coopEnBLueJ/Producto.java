@@ -18,11 +18,12 @@ public class Producto
     private Date fechaCompra;
     private double pesoEnKg;
     private ArrayList<String> arrayProductos;
+    
 
     /**
      * Constructor for objects of class Producto
      */
-    public Producto(String nombreArticulo,double precioArticulo, double pesoArticulo, boolean esPerecederoArticulo )
+    public Producto(String nombreArticulo, double precioArticulo, double pesoArticulo, boolean esPerecederoArticulo )
     {
         // initialise instance variables
         this.nombre = nombreArticulo;

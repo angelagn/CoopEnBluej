@@ -8,6 +8,7 @@ public class PequenaLogistica extends Logistica
        private int distanciaKm;
        private boolean esPerecedero;
        private double costeFijoKm = 0.3; 
+       private double coste;
        
     /** Constructor
      */
@@ -34,7 +35,8 @@ public class PequenaLogistica extends Logistica
     
         @Override
     public double calcularCosteLogistica(){
-         return 0;
+        coste = costeFijoKm * distanciaKm; 
+        return coste;
         
     }
 }

@@ -4,4 +4,6 @@ comment0.text=\n\ Write\ a\ description\ of\ class\ GestionPedidos\ here.\n\ \n\
 comment1.params=
 comment1.target=void\ ProductosPedido()
 comment1.text=\n
-numComments=2
+comment2.params=
+comment2.target=void\ ListaProductos()
+numComments=3

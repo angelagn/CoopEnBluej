@@ -8,6 +8,7 @@
 public class Pedido
 {
      private Producto[] productos;
+     
 
     /**
      * Constructor for objects of class GestionPedidos
