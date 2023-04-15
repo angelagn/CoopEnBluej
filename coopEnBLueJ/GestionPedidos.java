@@ -3,10 +3,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Write a description of class GestionPedidos here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Clase ProductosPedido que contiene una array de productos
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class GestionPedidos
 {
@@ -32,27 +31,27 @@ public class GestionPedidos
             
         }
     }
-    public void ListaProductos(){
-        List<String> listaProductos = new ArrayList<String>();
+    // public void ListaProductos(){
+        // List<String> listaProductos = new ArrayList<String>();
         
-        System.out.println("Escriba los productos que desea agregar a la lista, para terminar pulse x");
-        System.out.println("Nombre del Producto");
+        // listaProductos.add("Maiz");
+        // listaProductos.add("Algodon");
+        // listaProductos.add("Arroz");
+        // listaProductos.add("Pimiento");
         
-        Scanner teclado = new Scanner(System.in);
-        String nuevoProd = teclado.nextLine();
-        if (nuevoProd == "x"){
-            System.out.println("Los productos que ha elegido son: " + listaProductos);
-        }else{
-            for (int i=0; i < listaProductos.size()+1; i++){
-                listaProductos.add(nuevoProd);
-            }
-        }
+            // if (nuevoProd == "x"){
+            // System.out.println("Los productos que ha elegido son: " + listaProductos);
+        // }else{
+            // for (int i=0; i < listaProductos.size()+1; i++){
+                // listaProductos.add(nuevoProd);
+            // }
+        // }
         
-        System.out.println("Los productos agregados a su compra son: \n" + listaProductos);
+        // System.out.println("Los productos agregados a su compra son: \n" + listaProductos);
         
         
         
-    }
+    // }
     
    
     

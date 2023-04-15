@@ -20,7 +20,7 @@ public class Pedido
 
     /**
      */
-    public Producto[] getProductos()
+    public Producto[] getProductos() //no seria mas facil con una lista????
     {
         return productos;
     }

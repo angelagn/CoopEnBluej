@@ -1,9 +1,7 @@
 #BlueJ class context
 comment0.target=GestionPedidos
-comment0.text=\n\ Write\ a\ description\ of\ class\ GestionPedidos\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Clase\ ProductosPedido\ que\ contiene\ una\ array\ de\ productos\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
 comment1.params=
 comment1.target=void\ ProductosPedido()
 comment1.text=\n
-comment2.params=
-comment2.target=void\ ListaProductos()
-numComments=3
+numComments=2

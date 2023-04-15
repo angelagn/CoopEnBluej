@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Clase Producto que contiene las caracteristicas necesarias de cada producto para que pueda ser gestionado en la cooperativa.
- * 
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)
  */
@@ -15,8 +15,9 @@ public class Producto
     private double pesoToneladas;
     private boolean esPerecedero;
     private double rendimientoHectarea; 
-    private Date fechaCompra;
     private double pesoEnKg;
+    public Date fechaCompra;
+    
     private ArrayList<String> arrayProductos;
     
 
@@ -30,6 +31,8 @@ public class Producto
         this.precioReferenciaKg = precioArticulo;
         this.pesoToneladas = pesoArticulo;
         this.esPerecedero = esPerecederoArticulo;
+ 
+      
         
     }
 

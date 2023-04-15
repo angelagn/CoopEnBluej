@@ -1,28 +1,28 @@
 
 /**
- * Clase Producto que contiene las caracteristicas necesarias de cada producto para que pueda ser gestionado en la cooperativa.
+ * Clase GestionProductos que realiza las acciones de calcular los importes a cada tipo de cliente.
  * 
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)
  */
 public class GestionProductos 
 {
-    // instance variables - replace the example below with your own
+    // variables de instancia
     private double precioRefKg;
     private double precioClienteF;
     private double beneficiosCF;
-    private double precioDis;
-    private double beneficiosDis;
+    private double precioDistribuidor;
+    private double beneficiosDistribuidor;
     private double kilos;
     private double totalPagar;
   
 
     /**
-     * Constructor for objects of class GestionProductos
+     * Constructor para objetos de la clase GestionProductos
      */
     public GestionProductos()
     {
-        // initialise instance variables
+        // inicializacion de variables de constructor
        
        Producto miProducto = new Producto ("Nombre producto", precioRefKg , 0.0, false);
        this.precioRefKg = miProducto.getPrecioProducto();
@@ -45,10 +45,10 @@ public class GestionProductos
      */
     public double CobrarDistribuidor(double precioRefKg)
     {
-        // put your code here
-        beneficiosDis = precioRefKg * 5 / 100;
-        precioDis = precioRefKg + beneficiosDis;
-        return precioDis;
+       
+        beneficiosDistribuidor = precioRefKg * 5 / 100;
+        precioDistribuidor = precioRefKg + beneficiosDistribuidor;
+        return precioDistribuidor;
     }
     
     /**Funcion que calcula el pago que recibe cada productor

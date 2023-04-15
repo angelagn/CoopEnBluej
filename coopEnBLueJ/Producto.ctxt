@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Producto
-comment0.text=\n\ Clase\ Producto\ que\ contiene\ las\ caracteristicas\ necesarias\ de\ cada\ producto\ para\ que\ pueda\ ser\ gestionado\ en\ la\ cooperativa.\n\ \n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment0.text=\n\ Clase\ Producto\ que\ contiene\ las\ caracteristicas\ necesarias\ de\ cada\ producto\ para\ que\ pueda\ ser\ gestionado\ en\ la\ cooperativa.\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
 comment1.params=nombreArticulo\ precioArticulo\ pesoArticulo\ esPerecederoArticulo
 comment1.target=Producto(java.lang.String,\ double,\ double,\ boolean)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Producto\n
