@@ -12,19 +12,19 @@ public class PequenaLogistica extends Logistica
        
     /** Constructor
      */
-    public PequenaLogistica(int distanciaKm, boolean esPerecedero, double pesoPedido)
+    public PequenaLogistica(int distanciaKm, boolean esPerecedero, double pesoPedido, double precioArticulo)
     {
         // initialise instance variables
-       super(distanciaKm, esPerecedero, pesoPedido);
+       super();
        this.distanciaKm = getDistancia();
        this.esPerecedero = getPerecedero();
-       Producto producto = new Producto("nombre", 0.0, 0.0, true);
+       //Producto producto = new Producto("nombre", 0.0, 0.0, true);
     }
     
     /**Se sobrescribe el metodo transportar 
      * para ajustar a la pequeña logistica
      */
-       @Override
+       //@Override
     public String transportar(){
         Producto producto = new Producto("nombre", 0.0, 0.0, esPerecedero);
         if(esPerecedero == true && distanciaKm <= 100 ){
@@ -32,11 +32,16 @@ public class PequenaLogistica extends Logistica
     }
         return "Distancia a recorrer:  " + distanciaKm + " Kilometros.";
     }
+    // public double calcularCostePL(){
+        // Coste micoste = new Coste(3.14);
+        // //micoste.calcularCostePLogistica();
+        // return micoste.calcularCostePLogistica();
+    // }
     
-        @Override
-    public double calcularCosteLogistica(){
-        coste = costeFijoKm * distanciaKm; 
-        return coste;
+        // @Override
+    // public double calcularCosteLogistica(){
+        // coste = costeFijoKm * distanciaKm; 
+        // return coste;
         
-    }
+    // }
 }

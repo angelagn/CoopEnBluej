@@ -1,13 +1,9 @@
 #BlueJ class context
 comment0.target=GranLogistica
-comment1.params=distanciaKm\ esPerecedero\ precioProducto\ pesoPedido\ ciudad
+comment1.params=distanciaKm\ esPerecedero\ precioArticulo\ pesoPedido\ ciudad
 comment1.target=GranLogistica(int,\ boolean,\ double,\ double,\ java.lang.String)
 comment1.text=\ Constructor\n
 comment2.params=
 comment2.target=java.lang.String\ transportar()
 comment2.text=Se\ sobrescribe\ el\ metodo\ transportar\ \n\ para\ ajustar\ a\ Gran\ Logistica\n
-comment3.params=
-comment3.target=int\ getTramos()
-comment4.params=
-comment4.target=double\ calcularCosteLogistica()
-numComments=5
+numComments=3

@@ -5,20 +5,23 @@
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)
  */
-public class Logistica
+public class Logistica extends Coste
 {
     // instance variables - replace the example below with your own
     private int distanciaKm;
-    private boolean esPerecedero;
+    private  boolean esPerecedero;
     private String tipoLogistica;
     private double pesoPedido;
+    public double precioArticulo;
+    private int tramos;
 
     /**
      * Constructor for objects of class Logistica
      */
-    public Logistica(int distanciaKm, boolean esPerecedero, double pesoPedido)
+    public Logistica()
     {
         // initialise instance variables
+        super(distanciaKm, esPerecedero, precioArticulo, pesoPedido);
          this.distanciaKm = distanciaKm;
          this.esPerecedero = esPerecedero;
          this.pesoPedido = pesoPedido;
@@ -41,13 +44,19 @@ public class Logistica
         this.esPerecedero = esPerecedero;
     }
     
-     public String transportar(){
+     public String Transportar(){
          return "";
         
     }
-    public  double calcularCosteLogistica(){
-         return 0;
+         // public static int getTramos()
+    // {
+        // tramos = distanciaKm / 50;
+        // return  this.tramos;
+    // }
+    // @Override
+    // public  double CalcularCosteLogistica(){
+         // return 0;
         
-    }
+    // }
     
 }

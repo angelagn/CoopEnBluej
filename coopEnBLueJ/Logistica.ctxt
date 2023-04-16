@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Logistica
 comment0.text=\n\ Clase\ Producto\ que\ contiene\ las\ caracteristicas\ necesarias\ de\ cada\ producto\ para\ que\ pueda\ ser\ gestionado\ en\ la\ cooperativa.\n\ \n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
-comment1.params=distanciaKm\ esPerecedero\ pesoPedido
-comment1.target=Logistica(int,\ boolean,\ double)
+comment1.params=distanciaKm\ esPerecedero\ pesoPedido\ precioArticulo
+comment1.target=Logistica(int,\ boolean,\ double,\ double)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Logistica\n
 comment2.params=
 comment2.target=int\ getDistancia()
@@ -13,7 +13,5 @@ comment4.target=boolean\ getPerecedero()
 comment5.params=esPerecedero
 comment5.target=void\ setEsPerecedero(boolean)
 comment6.params=
-comment6.target=java.lang.String\ transportar()
-comment7.params=
-comment7.target=double\ calcularCosteLogistica()
-numComments=8
+comment6.target=java.lang.String\ Transportar()
+numComments=7
