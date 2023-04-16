@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Coste 
+public class Coste extends Producto
 {
     // instance variables - replace the example below with your own
     private double coste;
@@ -21,42 +21,31 @@ public class Coste
         /**
      * Constructor for objects of class Coste
      */
-    public Coste(int distanciaKm, double pesoPedido, double precioArticulo)
+    //String nombreArticulo, double precioArticulo, double pesoArticulo, boolean esPerecederoArticulo 
+    public Coste(int distanciaKm)
     {
-        // initialise instance variables
+        super("Arroz", distanciaKm, 0, true); //String double, double, boolean
         this.precioArticulo = precioArticulo;
         this.esPerecedero = esPerecedero;
+        this.distanciaKm = distanciaKm;
+        this.pesoPedido = pesoPedido;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    // public  double CalcularCosteLogistica(){
-         // return 0;
-        
-    // }
-        
-    public String calcularCostePLogistica(){
-        costeFijoKm = 0.3 ;
-        coste = costeFijoKm * distanciaKm; 
-        return "Coste Pequeña Logistica:" + coste;
-        
-    }
+   
     public int getTramos()
     {
         tramos = distanciaKm / 50;
         return  this.tramos;
     }
-
-    public double calcularCosteGLogistica(){
-        for(int i= 0 ; i <= getTramos(); i++){ 
-            coste = 0.5 * precioArticulo * pesoPedido;
-        }
-        System.out.println("El coste de la logistica es de: " + Math.round(coste) + " Euros.");
-        return coste;
+    public int getDistanciaKm()
+    {
+        return  this.distanciaKm;
+    }
+     public String calcularCosteLogistica(){
+         
+        return "Coste Logistica clase coste:";
         
     }
+
+    
 }

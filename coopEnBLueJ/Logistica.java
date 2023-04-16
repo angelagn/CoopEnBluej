@@ -18,10 +18,10 @@ public class Logistica extends Coste
     /**
      * Constructor for objects of class Logistica
      */
-    public Logistica()
+    public Logistica(int distanciaKm)
     {
         // initialise instance variables
-        super(distanciaKm, esPerecedero, precioArticulo, pesoPedido);
+        super(distanciaKm); //distanciaKm,  precioArticulo, pesoPedido
          this.distanciaKm = distanciaKm;
          this.esPerecedero = esPerecedero;
          this.pesoPedido = pesoPedido;
@@ -30,7 +30,6 @@ public class Logistica extends Coste
      public int getDistancia()
     {
         return  this.distanciaKm;
-        
     }
      public void setDistancia(int distanciaKm) {
         this.distanciaKm = distanciaKm;
@@ -45,18 +44,6 @@ public class Logistica extends Coste
     }
     
      public String Transportar(){
-         return "";
-        
+         return "transportar de logistica";
     }
-         // public static int getTramos()
-    // {
-        // tramos = distanciaKm / 50;
-        // return  this.tramos;
-    // }
-    // @Override
-    // public  double CalcularCosteLogistica(){
-         // return 0;
-        
-    // }
-    
 }
