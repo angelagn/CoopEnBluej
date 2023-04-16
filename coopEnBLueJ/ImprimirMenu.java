@@ -20,7 +20,9 @@ public class ImprimirMenu
     public void MenuVender()
     {
         // put your code here
+        System.out.println("____________________________________________");
         System.out.println("Bienvenido asociado \n");
+        //System.out.println("estos son los productos disponibles \n");
         
     }
     public void MenuComprar()

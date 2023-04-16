@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * Write a description of class Cooperativa here.
@@ -22,6 +23,12 @@ public class Cooperativa
         switch(opcion){
             case 1:
                 menu.MenuVender();
+                Pedido pedido1 = new Pedido(new ArrayList<Producto>());
+                
+                pedido1.ListaProductosAdd();
+                System.out.println("Lista de productos agregados******");
+                pedido1.ListaPedido();
+                
                 break;
             case 2:
                 menu.MenuComprar();
