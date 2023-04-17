@@ -51,7 +51,8 @@ public class PequenoProductor extends Productor
         //Se agrega el productor ingresado por tecladp
         int personas = 1;
         PequenoProductor[] arrayPP = new PequenoProductor[personas];
-        PequenoProductor nuevoProductor = new PequenoProductor (nombreProductor,nombreArticulo, hectareas, cantidadArticulos);
+        PequenoProductor nuevoProductor = new PequenoProductor (nombreProductor,nombreArticulo,
+                                                hectareas, cantidadArticulos);
         for (int i = 0; i < arrayPP.length; i++){
             arrayPP[i]= nuevoProductor;
         }

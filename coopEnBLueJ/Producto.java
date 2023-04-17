@@ -24,16 +24,14 @@ public class Producto
     /**
      * Constructor for objects of class Producto
      */
-    public Producto(String nombreArticulo, double precioArticulo, double pesoArticulo, boolean esPerecederoArticulo )
+    public Producto(String nombreArticulo, double precioArticulo, 
+                    double pesoArticulo, boolean esPerecederoArticulo )
     {
         // initialise instance variables
         this.nombre = nombreArticulo;
         this.precioReferenciaKg = precioArticulo;
         this.pesoToneladas = pesoArticulo;
         this.esPerecedero = esPerecederoArticulo;
- 
-      
-        
     }
 
     /**Metodos get
@@ -57,6 +55,12 @@ public class Producto
     public Date getFechaCompra(){
         return this.fechaCompra;
     }
+    
+    /**Metodos set
+     */
+    public void setFechaCompra(Date fechaCompra){
+        this.fechaCompra = fechaCompra;
+    }
     /**Convierte las toneladas a kilogramos
      */
 
@@ -64,14 +68,11 @@ public class Producto
         pesoEnKg = pesoToneladas * 1000;
         return this.pesoEnKg;
     }
-    
-    
-    /**Metodos set
-     */
-    public void setFechaCompra(Date fechaCompra){
-        this.fechaCompra = fechaCompra;
+    @Override
+    public String toString(){
+        return "Producto: " + nombre + ", precio: " + precioReferenciaKg
+                + " €.";
     }
-    
     
     
 }

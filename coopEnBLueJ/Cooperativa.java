@@ -1,11 +1,11 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Write a description of class Cooperativa here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Clase Cooperativa que contiene el metodo main y las acciones que realiza el usuario al interactuar con la aplicacion.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class Cooperativa
 {
@@ -26,14 +26,22 @@ public class Cooperativa
                 Pedido pedido1 = new Pedido(new ArrayList<Producto>());
                 
                 pedido1.ListaProductosAdd();
-                System.out.println("Lista de productos agregados******");
+                System.out.println("----Lista de productos agregados----");
                 pedido1.ListaPedido();
-                
                 break;
             case 2:
                 menu.MenuComprar();
+                scanner.nextLine();
+                System.out.println("----Lista de productos disponibles----");
+                GestionPedidos pedido2 = new GestionPedidos();
+                pedido2.ListaProductos();
+                
                 break;
             case 3:
+                // informes
+                menu.MenuInformes();
+                break;
+            case 4:
                 quiereSalir = true;
                 System.out.println("Hasta Pronto");
                 break;

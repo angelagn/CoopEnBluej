@@ -16,7 +16,8 @@ public class Coste extends Producto
         private double pesoPedido;
         private double precioArticulo;
         private boolean esPerecedero;
-        //private double precioLog;
+       // public double pagar;
+        
         
         /**
      * Constructor for objects of class Coste
@@ -30,7 +31,15 @@ public class Coste extends Producto
         this.distanciaKm = distanciaKm;
         this.pesoPedido = pesoPedido;
     }
-
+    public String PagarProveedor(double precioArticulo, double pesoArticulo){
+        
+        double tonelada = 1000;
+        pesoPedido = (pesoArticulo * tonelada);
+        double pagar = (precioArticulo * pesoPedido);
+        String pagarString =Double.toString(pagar);
+        
+        return "Pagar al proveedor: " + pagarString + " €.";
+    }
    
     public int getTramos()
     {

@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=ImprimirMenu
-comment0.text=\n\ Write\ a\ description\ of\ class\ ImprimirMenu\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Clase\ ImprimirMenu\ que\ contiene\ los\ diferentes\ menus\ que\ se\ le\ presentan\n\ al\ ususario\ al\ momento\ de\ ejecutar\ la\ aplicacion.\n
 comment1.params=
 comment1.target=void\ MenuBienvenido()
 comment2.params=
 comment2.target=void\ MenuVender()
 comment3.params=
 comment3.target=void\ MenuComprar()
-numComments=4
+comment4.params=
+comment4.target=void\ MenuInformes()
+numComments=5

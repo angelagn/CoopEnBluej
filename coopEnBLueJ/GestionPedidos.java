@@ -1,55 +1,37 @@
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Scanner;
-
 /**
- * Clase ProductosPedido que contiene una array de productos
+ * Clase GestionPedidos que contiene una lista de productos 
+ * disponibles en la cooperativa para comprar.
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)
  */
 public class GestionPedidos
 {
-    /**
+    /**La clase ListaProductos, crea elementos tipo Producto y luego los 
+     * añade a una lista, para finalmente mostrar la lista al usuario.
      */
-    public void ProductosPedido()
-    {
-        Producto[] productos = new Producto[3];
-        productos[0] = new Producto("Algodon", 0.90, 3, false);
-        productos[1] = new Producto("Naranjos", 0.70, 1.5, true);
-        productos[2] = new Producto("Meloconton", 1.20, 2, true);
+    public void ListaProductos(){
+        //Crea elementos tipo Producto
+        Producto manzana = new Producto("Manzana", 3.4, 2, true);
+        Producto pera = new Producto("Pera", 2, 1.5, true);
+        Producto algodon = new Producto("Algodon", 4, 6, false);
+        Producto pimiento = new Producto("Pimiento", 7, 3, true);
+        Producto arroz = new Producto("Arroz", 1.4, 2.2, true);
         
-        Pedido pedido = new Pedido(productos);
+        //Declara una lista de productos
+        List<Producto> listaProductos = new ArrayList<>();
         
-        Producto[] productosPedido = pedido.getProductos();
+        //Añade elementos a la lista
+        listaProductos.add(manzana);
+        listaProductos.add(pera);
+        listaProductos.add(algodon);
+        listaProductos.add(pimiento);
+        listaProductos.add(arroz);
         
-        for (int i = 0; i < productosPedido.length; i++ ){
-            System.out.println("Producto: " + (i+1) + ":");
-            System.out.println("Nombre: " + productosPedido[i].getNombreProducto());
-            System.out.println("Precio: " + productosPedido[i].getPrecioProducto());
-            System.out.println("Peso por kilogramo: " + productosPedido[i].getPesoEnKg());
-            System.out.println("Producto perecedero: " + productosPedido[i].getEsPerecederoProducto());
-            
-        }
-    }
-    // public void ListaProductos(){
-        // List<String> listaProductos = new ArrayList<String>();
-        
-        // listaProductos.add("Maiz");
-        // listaProductos.add("Algodon");
-        // listaProductos.add("Arroz");
-        // listaProductos.add("Pimiento");
-        
-            // if (nuevoProd == "x"){
-            // System.out.println("Los productos que ha elegido son: " + listaProductos);
-        // }else{
-            // for (int i=0; i < listaProductos.size()+1; i++){
-                // listaProductos.add(nuevoProd);
-            // }
-        // }
-        
-        // System.out.println("Los productos agregados a su compra son: \n" + listaProductos);
-        
-        
-        
-    // } 
+        //Imprime la lista de productos disponibles
+        for(Producto producto : listaProductos){
+            System.out.println(producto.toString());
+        }   
+    } 
 }

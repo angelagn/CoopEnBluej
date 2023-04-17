@@ -7,6 +7,6 @@
  */
 public class Informes
 {
-    GestionPedidos 
+    //GestionPedidos 
   
 }

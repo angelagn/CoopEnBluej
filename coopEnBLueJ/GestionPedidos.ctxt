@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=GestionPedidos
-comment0.text=\n\ Clase\ ProductosPedido\ que\ contiene\ una\ array\ de\ productos\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment0.text=\n\ Clase\ GestionPedidos\ que\ contiene\ una\ lista\ de\ productos\ \n\ disponibles\ en\ la\ cooperativa\ para\ comprar.\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
 comment1.params=
-comment1.target=void\ ProductosPedido()
-comment1.text=\n
+comment1.target=void\ ListaProductos()
+comment1.text=La\ clase\ ListaProductos,\ crea\ elementos\ tipo\ Producto\ y\ luego\ los\ \n\ a\u00F1ade\ a\ una\ lista,\ para\ finalmente\ mostrar\ la\ lista\ al\ usuario.\n
 numComments=2
