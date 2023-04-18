@@ -9,19 +9,20 @@ import java.util.Scanner;
  */
 public class Pedido
 {
+    //Crea un array de productos tipo producto
     private ArrayList<Producto> listaProductos;
-    
+    //Declara el constructor
     public Pedido(ArrayList<Producto> listaProductos)
     {
         this.listaProductos = listaProductos;
         
     }
-    public void agregarProducto(Producto producto)
-    {
-        listaProductos.add(producto);
-        
-    }
-   
+    
+    // public void agregarProducto(Producto producto)
+    // {
+        // listaProductos.add(producto);
+    // }
+    //Metodo que añade un producto a la lista
     public void ListaProductosAdd(){
         Scanner sc = new Scanner(System.in);
         String agregar = "si";

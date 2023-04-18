@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * Clase Cooperativa que contiene el metodo main y las acciones que realiza el usuario al interactuar con la aplicacion.
@@ -26,7 +26,7 @@ public class Cooperativa
                 Pedido pedido1 = new Pedido(new ArrayList<Producto>());
                 
                 pedido1.ListaProductosAdd();
-                System.out.println("----Lista de productos agregados----");
+                System.out.println("----Lista de productos agregados------");
                 pedido1.ListaPedido();
                 break;
             case 2:
@@ -35,6 +35,9 @@ public class Cooperativa
                 System.out.println("----Lista de productos disponibles----");
                 GestionPedidos pedido2 = new GestionPedidos();
                 pedido2.ListaProductos();
+                pedido2.Cesta();
+                
+                
                 
                 break;
             case 3:
