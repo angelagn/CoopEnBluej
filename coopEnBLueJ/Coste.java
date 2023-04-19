@@ -8,16 +8,16 @@
 public class Coste extends Producto
 {
     // instance variables - replace the example below with your own
-    private double coste;
-    private static int distanciaKm;
-      
-       private double costeFijoKm; 
-        private int tramos;
-        private double pesoPedido;
-        private double precioArticulo;
-        private boolean esPerecedero;
-       // public double pagar;
-        
+        private double coste;
+        private static int distanciaKm;
+          
+           private double costeFijoKm; 
+            private int tramos;
+            private double pesoPedido;
+            private double precioArticulo;
+            private boolean esPerecedero;
+           // public double pagar;
+            
         
         /**
      * Constructor for objects of class Coste

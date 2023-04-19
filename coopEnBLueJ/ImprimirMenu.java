@@ -7,9 +7,9 @@ public class ImprimirMenu
 {
     public void MenuBienvenido(){
         System.out.println("========================================");
-        System.out.println("Bienvenido a la coooperativa.\n");
+        System.out.println("     Bienvenido a la coooperativa.  \n");
         System.out.println("----------------------------------------");
-        System.out.println("----------MENU PRINCIPAL----------------");
+        System.out.println("-------------MENU PRINCIPAL-------------");
         System.out.println("Elija la opcion que desee...");
         System.out.println("1. Soy proveedor, vender mis productos ");
         System.out.println("2. Soy cliente, comprar productos");

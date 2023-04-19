@@ -32,15 +32,16 @@ public class GranLogistica extends Logistica
     /**Se sobrescribe el metodo transportar 
      * para ajustar a Gran Logistica
      */
-       @Override
+       @Override 
     public String Transportar(){
         tramos = distanciaKm / 50;
         restoKm = distanciaKm%50;
         String tramosString = String.valueOf(tramos);
         Producto producto = new Producto("nombre", 0.0, 0.0, esPerecedero);
         if(esPerecedero == true && distanciaKm > 100 ){
-            System.out.println("***********************************\n");    
+            System.out.println("------------------------------------------------");   
             System.out.println("Enviando producto a " + ciudad + ".\n");
+            System.out.println("------------------------------------------------");
             System.out.println("Distancia a recorrer gran logistica:  " + distanciaKm+ "Km, en " + tramos + " tramos de 50Km.");
             System.out.println("Distancia a recorrer pequeña logistica:  " + restoKm + "Km.");
     }

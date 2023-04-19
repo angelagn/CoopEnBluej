@@ -40,9 +40,9 @@ public class Pedido
                 sc.next();
             }
             double precio = sc.nextDouble();
-            System.out.println("Ingrese cantidad del producto: ");
+            System.out.println("Ingrese cantidad (toneladas) del producto: ");
             double cantidad = sc.nextDouble();
-            System.out.println("¿Es perecedero?: ");
+            System.out.println("¿Es perecedero? true/false: ");
             boolean perecedero = sc.nextBoolean();
             System.out.println("---------------------------------------");
             System.out.println("¿Desea agregar mas productos?: si/no");
@@ -62,4 +62,6 @@ public class Pedido
         System.out.println(producto.getNombreProducto());
     }
     }
+    
+   
 }

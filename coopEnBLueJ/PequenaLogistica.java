@@ -25,7 +25,9 @@ public class PequenaLogistica extends Logistica
     @Override
     public String Transportar(){
         if(distanciaKm <= 100 ){
-                System.out.println("Enviando producto a traves de pequeña logistica. \n");
+            System.out.println("------------------------------------------------");
+            System.out.println("Enviando producto a traves de pequeña logistica. \n");
+            System.out.println("------------------------------------------------");
     }
     String distanciaString =Integer.toString(distanciaKm); 
         return "Distancia a recorrer:  " + distanciaString + " Kilometros.";
