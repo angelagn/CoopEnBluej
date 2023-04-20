@@ -10,8 +10,10 @@ import java.util.ArrayList;
 public class Cooperativa
 {
     public static void main(String[] args){
-        //GestionPedidos pedido1 = new GestionPedidos();
+        //Declara variables
         boolean quiereSalir = false;
+        double pesoArticulo = 0.5;
+        double precioArticulo = 1.5; // Precio del articulo 
     
         do{
         ImprimirMenu menu = new ImprimirMenu();
@@ -23,21 +25,26 @@ public class Cooperativa
         switch(opcion){
             case 1:
                 menu.MenuVender();
-                Pedido pedido1 = new Pedido(new ArrayList<Producto>());
-                pedido1.ListaProductosAdd();
+                Pedido pedido1 = new Pedido(new ArrayList<Producto>()); // crea objeto de tipo Pedido
+                pedido1.ListaProductosAdd(); //añade objetos a la lista
                 System.out.println("----Lista de productos agregados------");
-                pedido1.ListaPedido();
-                Coste costePedido = new Coste(50); //Objeto tipo coste, parametro kilometros
-                double precioArticulo = 1.5; // Precio del articulo 
-                double pesoArticulo = 0.5; //Precio del articulo en toneladas
+                pedido1.ListaPedido(); //Imprime la lista
+                Coste costePedido = new Coste(); //Objeto tipo coste, parametro kilometros
+                
+                
                 String resultadoPago = costePedido.PagarProveedor(precioArticulo, pesoArticulo);
+                System.out.println("--------------------------------------");
                 System.out.println(resultadoPago); //IMprime el total en euros a pagar al proveedor
+
+                Coste pagar1 = new Coste();
+               
+                pagar1.PagarProveedor(precioArticulo, pesoArticulo);
                 break;
             case 2:
                 menu.MenuComprar();
                 sc.nextLine();
                 System.out.println("----Lista de productos disponibles----");
-                GestionPedidos pedido2 = new GestionPedidos();
+                GestionPedidos pedido2 = new GestionPedidos(); //crea objeto de tipo GestionPedidos
                 pedido2.ListaProductos();
                 pedido2.Cesta();
                 
@@ -47,6 +54,7 @@ public class Cooperativa
                 String ciudad = sc.nextLine();
                 System.out.println("Ingrese distancia en kilometros para su envio.");
                 int km = sc.nextInt();
+                double costeProducto = 1.50;
                 PequenaLogistica pLogistica1 = new PequenaLogistica(km);//Crea objeto pequeña logistica
                 GranLogistica gLogistica1 = new GranLogistica(ciudad, km); //Crea objeto gran logistica
                 //Elige el tipo de logistica segun numero de kilometros
@@ -55,8 +63,10 @@ public class Cooperativa
                     System.out.println(pLogistica1.calcularCosteLogistica());
                 }else{
                     System.out.println(gLogistica1.Transportar());
-                    System.out.println(gLogistica1.calcularCosteLogistica());
-                }    
+                    System.out.println(gLogistica1.calcularCosteLogistica(pesoArticulo, km, costeProducto));
+                }   
+                
+                
                 break;
             case 3:
                 // informes

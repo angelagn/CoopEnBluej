@@ -53,10 +53,10 @@ public class GestionProductos
     
     /**Funcion que calcula el pago que recibe cada productor
        */
-    public double PagarAProductor(double precioRefKg, double kilos){
-        totalPagar = precioRefKg * kilos;
-        return totalPagar;
-    }
+    // public double PagarAProductor(double precioRefKg, double kilos){
+    //     totalPagar = precioRefKg * kilos;
+    //     return totalPagar;
+    // }
     
     
 }

@@ -33,6 +33,13 @@ public class Producto
         this.pesoToneladas = pesoArticulo;
         this.esPerecedero = esPerecederoArticulo;
     }
+    public Producto(double precioArticulo, double pesoArticulo)
+    {
+        // initialise instance variables
+        this.precioReferenciaKg = precioArticulo;
+        this.pesoToneladas = pesoArticulo;
+
+    }
 
     /**Metodos get
      */

@@ -21,7 +21,7 @@ public class Logistica extends Coste
     public Logistica(int distanciaKm)
     {
         // initialise instance variables
-        super(distanciaKm); //distanciaKm,  precioArticulo, pesoPedido
+        super(); 
          this.distanciaKm = distanciaKm;
          this.esPerecedero = esPerecedero;
          this.pesoPedido = pesoPedido;
