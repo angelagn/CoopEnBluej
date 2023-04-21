@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.ArrayList;
-import java.util.Stack;
+
+import org.w3c.dom.html.HTMLTableCaptionElement;
 
 /**
  * Write a description of class PequeñoProductor here.
@@ -14,26 +15,24 @@ public class PequenoProductor extends Productor
     // instance variables - replace the example below with your own
     private int anio;
     private int ultimoDigitoAnio;
-    private ArrayList<String> pequeñosProductores;
-    private String nombreProductor;
-    private String nombreArticulo;
-    private double hectareas;
-    private int cantidadArticulos;
+    public String[] arrayPProductores;
+    
+    //private ArrayList<String> pequeñosProductores;
+    //private String nombreProductor;
+   // private String nombreArticulo;
+    //private double hectareas;
+    //private int cantidadArticulos;
     
     /** Se llama al constructor de la super clase Productor a traves de la palabra reservada super
      */
-    public PequenoProductor(String nombreProductor, String nombreArticulo, double hectareas, int cantidadArticulos)
-    {
-        // initialise instance variables
-        super(nombreProductor, nombreArticulo, hectareas, cantidadArticulos);
-        this.nombreProductor = nombreProductor;
-        this.nombreArticulo = nombreArticulo;
-        this.hectareas = hectareas;
-        this.cantidadArticulos = cantidadArticulos;
+    public PequenoProductor(String nombre, String producto, int hectareas, int toneladas) {
+        super(nombre, producto, hectareas, toneladas);
         
     }
 
-    /** Funcion que calcula el ultimo digito del año 
+  
+
+    /** metodo que calcula el ultimo digito del año 
        */
      public Integer getYear() {
         Calendar fecha = new GregorianCalendar();
@@ -43,34 +42,31 @@ public class PequenoProductor extends Productor
         return ultimoDigitoAnio;
     }
     
-    public void tipoProductor(){
-        String nombre;
-        String producto;
-    }
-    public void mostrarPequeProductores(){
-        //Se agrega el productor ingresado por tecladp
-        int personas = 1;
-        PequenoProductor[] arrayPP = new PequenoProductor[personas];
-        PequenoProductor nuevoProductor = new PequenoProductor (nombreProductor,nombreArticulo,
-                                                hectareas, cantidadArticulos);
-        for (int i = 0; i < arrayPP.length; i++){
-            arrayPP[i]= nuevoProductor;
-        }
+    // public void tipoProductor(){
+    //     String nombre;
+    //     String producto;
+    // }
+    public void MostrarPequeProductores(){
+        ArrayList<Productor> listaPProductores = new ArrayList<Productor>();
+        listaPProductores.add(new Productor("Maria", "Café", 10, 100));
+        listaPProductores.add(new Productor("Juana", "Cacao", 15, 200));
+        listaPProductores.add(new Productor("Antonia", "Plátano", 20, 300));
+        listaPProductores.add(new Productor("Laura", "Papa", 25, 400));
+        listaPProductores.add(new Productor("Sofia", "Frijol", 30, 500));
+    
+        // Agregar más elementos a la lista
+        listaPProductores.add(new Productor("Pedro", "Café", 12, 120));
+        listaPProductores.add(new Productor("Manuel", "Cacao", 17, 220));
+        listaPProductores.add(new Productor("Lucía", "Plátano", 22, 320));
+    
+        // Acceder a un elemento de la lista
+        Productor primerProductor = listaPProductores.get(0);
+        String nombrePrimerProductor = primerProductor.getNombre();
+        String productoPrimerProductor = primerProductor.getProducto();
+        int hectareasPrimerProductor = primerProductor.getHectareas();
+        int toneladasPrimerProductor = primerProductor.getToneladas();
         
-        //Array con datos de productores
-        PequenoProductor[] arrayPProductores = new PequenoProductor[4];
-        arrayPProductores[0] = new PequenoProductor ("Juan","Arroz", 1.3, 15);
-        arrayPProductores[1] = new PequenoProductor ("Pepe","Algodon", 2.5, 3);
-        arrayPProductores[2] = new PequenoProductor ("Maria","Melocoton", 2, 2);
-        arrayPProductores[3] = new PequenoProductor ("Andrea","Pera", 1.2, 3);
-        
-        System.out.println("Mostrando lista disponible de pequeños productores y hectareas");
-        for (int i=0; i< arrayPP.length; i++){
-            System.out.println(arrayPP[i].nombreProductor +" "+ arrayPP[i].hectareas);
-        }
-        for (int i=0; i< arrayPProductores.length; i++){
-            
-            System.out.println(arrayPProductores[i].nombreProductor +" "+ arrayPProductores[i].hectareas);
-        }
+      
     }
+    
 }

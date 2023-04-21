@@ -25,10 +25,11 @@ public class Cooperativa
         switch(opcion){
             case 1:
                 menu.MenuVender();
+                
                 Pedido pedido1 = new Pedido(new ArrayList<Producto>()); // crea objeto de tipo Pedido
                 pedido1.ListaProductosAdd(); //añade objetos a la lista
                 System.out.println("----Lista de productos agregados------");
-                pedido1.ListaPedido(); //Imprime la lista
+                pedido1.ListaPedido(); //Imprime la list
                 Coste costePedido = new Coste(); //Objeto tipo coste, parametro kilometros
                 
                 
@@ -71,6 +72,27 @@ public class Cooperativa
             case 3:
                 // informes
                 menu.MenuInformes();
+                System.out.println("Introducir numero: ");
+                int opc = sc.nextInt();
+                switch(opc){
+                    case 1:
+                        //INFORME DE PRODUCTOS
+                        //objeto tipo pequeño productor
+                        PequenoProductor pProductor1 = new PequenoProductor("Pedro", "Platano", 3, 1);
+                        //Enlista y muestra pequeños productores
+                        pProductor1.MostrarPequeProductores();
+                        break;
+                    case 2:
+                        //INFORME DE VENTAS
+                        System.out.println("INFORME DE VENTAS ");
+                        break;
+                        
+                    case 3:
+                        //INFORME DE RENDIMIENTO
+                        System.out.println("INFORME DE RENDIMIENTO ");
+                        break;
+                }
+                
                 break;
             case 4:
                 quiereSalir = true;

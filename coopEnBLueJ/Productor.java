@@ -1,31 +1,55 @@
 
-/**
- * Write a description of class Productor here.
+/**Write a description of class Productor here.
  * 
  * @author (Angela Guzman) 
  * @version (a version number or a date)
  */
-public class Productor extends Usuario
+public class Productor
 {
-    // instance variables - replace the example below with your own
-    //private String nombreProductor;
+    // Variables
+    private String nombre;
     private String producto;
-    private double hectareas;
-    private int cantidadProductos;
-
-    /** Constructor para objetos de la clase Productor
-     */
-    public Productor(String nombreUsuario, String nombreArticulo, double hectareas, int cantidadTon)
-    {
-        // initialise instance variables
-        //this.nombreProductor = nombreProd;
-        super(nombreUsuario);
-        this.producto = nombreArticulo;
-        this.hectareas = hectareas;
-        this.cantidadProductos = cantidadTon;
-       
-    }
-   
-
+    private int hectareas;
+    private int toneladas;
     
+    public Productor(String nombre, String producto, int hectareas, int toneladas) {
+        this.nombre = nombre;
+        this.producto = producto;
+        this.hectareas = hectareas;
+        this.toneladas = toneladas;
+    }
+    
+    // Métodos getter y setter para acceder a los atributos
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public String getProducto() {
+        return producto;
+    }
+    
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+    
+    public int getHectareas() {
+        return hectareas;
+    }
+    
+    public void setHectareas(int hectareas) {
+        this.hectareas = hectareas;
+    }
+    
+    public int getToneladas() {
+        return toneladas;
+    }
+    
+    public void setToneladas(int toneladas) {
+        this.toneladas = toneladas;
+    }
 }

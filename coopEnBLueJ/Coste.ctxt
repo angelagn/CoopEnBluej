@@ -1,15 +1,13 @@
 #BlueJ class context
 comment0.target=Coste
-comment0.text=\n\ Write\ a\ description\ of\ class\ Coste\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=distanciaKm
-comment1.target=Coste(int)
+comment0.text=\n\ Write\ a\ description\ of\ class\ Coste\ here.\n\ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Coste()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Coste\n
-comment2.params=precioArticulo\ pesoArticulo
-comment2.target=java.lang.String\ PagarProveedor(double,\ double)
-comment3.params=
-comment3.target=int\ getTramos()
+comment2.params=
+comment2.target=int\ getDistanciaKm()
+comment3.params=precioArticulo\ pesoArticulo
+comment3.target=java.lang.String\ PagarProveedor(double,\ double)
 comment4.params=
-comment4.target=int\ getDistanciaKm()
-comment5.params=
-comment5.target=java.lang.String\ calcularCosteLogistica()
-numComments=6
+comment4.target=java.lang.String\ calcularCosteLogistica()
+numComments=5
