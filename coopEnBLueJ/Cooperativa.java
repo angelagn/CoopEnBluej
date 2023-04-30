@@ -84,11 +84,17 @@ public class Cooperativa
                         break;
                     case 2:
                         //INFORME DE VENTAS
-                        System.out.println("INFORME DE VENTAS ");
+                        
+                        System.out.println("INFORME DE VENTAS \n     ");
+                        InformeVentas informes = new InformeVentas();
+                        informes.informeCantidadVendida();
                         break;
                         
                     case 3:
-                        //INFORME DE RENDIMIENTO
+                        //INFORME DE RENDIMIENTO3
+                        InformeRendimiento informeR = new InformeRendimiento();
+                        informeR.informeRendimiento();
+
                         System.out.println("INFORME DE RENDIMIENTO ");
                         break;
                 }

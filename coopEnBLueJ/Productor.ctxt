@@ -1,7 +1,22 @@
 #BlueJ class context
 comment0.target=Productor
-comment0.text=\n\ Write\ a\ description\ of\ class\ Productor\ here.\n\ \n\ @author\ (Angela\ Guzman)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=nombreUsuario\ nombreArticulo\ hectareas\ cantidadTon
-comment1.target=Productor(java.lang.String,\ java.lang.String,\ double,\ int)
-comment1.text=\ Constructor\ para\ objetos\ de\ la\ clase\ Productor\n
-numComments=2
+comment0.text=Write\ a\ description\ of\ class\ Productor\ here.\n\ \n\ @author\ (Angela\ Guzman)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=nombre\ producto\ hectareas\ toneladas
+comment1.target=Productor(java.lang.String,\ java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=nombre
+comment3.target=void\ setNombre(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getProducto()
+comment5.params=producto
+comment5.target=void\ setProducto(java.lang.String)
+comment6.params=
+comment6.target=int\ getHectareas()
+comment7.params=hectareas
+comment7.target=void\ setHectareas(int)
+comment8.params=
+comment8.target=int\ getToneladas()
+comment9.params=toneladas
+comment9.target=void\ setToneladas(int)
+numComments=10

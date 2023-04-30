@@ -27,6 +27,8 @@ public class GestionPedidos
         Producto algodon = new Producto("Algodon", 4, 6, false);
         Producto pimiento = new Producto("Pimiento", 7, 3, true);
         Producto arroz = new Producto("Arroz", 1.4, 2.2, true);
+        Producto cebolla = new Producto("Cebolla", 2.4, 2.6, true);
+        Producto brocoli = new Producto("Brocoli", 3.4, 2.5, true);
 
         //Añade elementos a la lista
         listaProductos.add(manzana);
@@ -34,6 +36,8 @@ public class GestionPedidos
         listaProductos.add(algodon);
         listaProductos.add(pimiento);
         listaProductos.add(arroz);
+        listaProductos.add(cebolla);
+        listaProductos.add(brocoli);
         
         //Imprime la lista de productos disponibles
         for(Producto producto : listaProductos){
