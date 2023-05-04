@@ -10,4 +10,6 @@ comment2.text=Se\ sobrescribe\ el\ metodo\ transportar\ para\ ajustar\ a\ la\ pe
 comment3.params=
 comment3.target=java.lang.String\ calcularCosteLogistica()
 comment3.text=Se\ sobrescribe\ el\ metodo\ calcularCosteLogistica\ para\ ajustar\ a\ Gran\ Logistica\n
-numComments=4
+comment4.params=
+comment4.target=void\ TotalLogistica()
+numComments=5

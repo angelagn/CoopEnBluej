@@ -42,4 +42,9 @@ public class PequenaLogistica extends Logistica
         coste = costeFijoKm * distanciaKm; 
         return "Coste Pequeña Logistica: " + coste + " Euros.";
     }
+    int totalPLogistica = 6000;
+    public void TotalLogistica(){
+        System.out.println("------------------------------------------------");
+        System.out.println("El precio total de la pequeña logistica el ultimo\naño fue: " + totalPLogistica + " euros");
+    }
 }

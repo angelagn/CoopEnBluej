@@ -16,7 +16,6 @@ public class ImprimirMenu
         System.out.println("3. Soy administrador, generar informes");
         System.out.println("4. Salir");
         System.out.println("----------------------------------------");
-        
     }
     public void MenuVender()
     {

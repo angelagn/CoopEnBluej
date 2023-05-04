@@ -30,8 +30,6 @@ public class PequenoProductor extends Productor
         
     }
 
-  
-
     /** metodo que calcula el ultimo digito del año 
        */
      public Integer getYear() {
@@ -42,10 +40,6 @@ public class PequenoProductor extends Productor
         return ultimoDigitoAnio;
     }
     
-    // public void tipoProductor(){
-    //     String nombre;
-    //     String producto;
-    // }
     public void MostrarPequeProductores(){
         ArrayList<Productor> listaPProductores = new ArrayList<Productor>();
         listaPProductores.add(new Productor("Maria", "Café", 10, 100));
