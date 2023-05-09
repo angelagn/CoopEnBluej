@@ -5,23 +5,16 @@ import java.util.GregorianCalendar;
 import org.w3c.dom.html.HTMLTableCaptionElement;
 
 /**
- * Write a description of class PequeñoProductor here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Clase PequenoProductor que realiza acciones con pequeños productores 
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class PequenoProductor extends Productor
 {
-    // instance variables - replace the example below with your own
+    // Variables de instancia
     private int anio;
     private int ultimoDigitoAnio;
     public String[] arrayPProductores;
-    
-    //private ArrayList<String> pequeñosProductores;
-    //private String nombreProductor;
-   // private String nombreArticulo;
-    //private double hectareas;
-    //private int cantidadArticulos;
     
     /** Se llama al constructor de la super clase Productor a traves de la palabra reservada super
      */
@@ -59,8 +52,6 @@ public class PequenoProductor extends Productor
         String productoPrimerProductor = primerProductor.getProducto();
         int hectareasPrimerProductor = primerProductor.getHectareas();
         int toneladasPrimerProductor = primerProductor.getToneladas();
-        
-      
+         
     }
-    
 }

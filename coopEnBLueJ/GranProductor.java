@@ -1,6 +1,8 @@
-
 /**
- * Write a description of class GranProductor here.
+ * Clase GranProductor que hereda de productor y cuenta con el constructor de la clase para ser heredada
+ * por otras clases.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class GranProductor extends Productor
 {

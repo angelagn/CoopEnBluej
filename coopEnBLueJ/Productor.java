@@ -1,8 +1,8 @@
 
-/**Write a description of class Productor here.
- * 
- * @author (Angela Guzman) 
- * @version (a version number or a date)
+/**
+ * Clase Productor, contiene los detalles de cada producto y los métodos set y get.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class Productor
 {

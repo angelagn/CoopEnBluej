@@ -58,7 +58,7 @@ public class Cooperativa
                 double costeProducto = 1.50;
                 PequenaLogistica pLogistica1 = new PequenaLogistica(km);//Crea objeto pequeña logistica
                 GranLogistica gLogistica1 = new GranLogistica(ciudad, km); //Crea objeto gran logistica
-                //Elige el tipo de logistica segun numero de kilometros
+                //Elige el tipo de logistica según numero de kilometros
                 if(km <= 100){
                     System.out.println(pLogistica1.Transportar());
                     System.out.println(pLogistica1.calcularCosteLogistica());
@@ -66,8 +66,6 @@ public class Cooperativa
                     System.out.println(gLogistica1.Transportar());
                     System.out.println(gLogistica1.calcularCosteLogistica(pesoArticulo, km, costeProducto));
                 }   
-                
-                
                 break;
             case 3:
                 // informes
@@ -111,7 +109,6 @@ public class Cooperativa
                         l1.TotalLogistica();
                         break;
                 }
-                
                 break;
             case 4:
                 quiereSalir = true;

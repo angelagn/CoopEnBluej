@@ -2,7 +2,10 @@
 /**
  * Clase ImprimirMenu que contiene los diferentes menus que se le presentan
  * al ususario al momento de ejecutar la aplicacion.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
+
 public class ImprimirMenu
 {
     public void MenuBienvenido(){

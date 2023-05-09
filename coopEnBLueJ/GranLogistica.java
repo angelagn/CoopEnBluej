@@ -15,12 +15,10 @@ public class GranLogistica extends Logistica // Hereda de la clase Logistica
     private boolean esPerecedero;
     private int tramos;
     private double costeProducto;
-    // private String tramosString;
     private String ciudad;
     private int restoKm;
-    // private double coste;
     private double pesoPedido;
-    // private Producto[] productosPedido; // Inicializa el array de productos pedido
+
 
     /**
      * Constructor inicializa las variables
@@ -32,7 +30,7 @@ public class GranLogistica extends Logistica // Hereda de la clase Logistica
         this.esPerecedero = getPerecedero();
         this.costeProducto = getPrecioProducto();
         this.ciudad = ciudad;
-        this.pesoPedido = pesoPedido; // ASOCIAR CON EL PESO EN LA CLASE PEDIDO
+        this.pesoPedido = pesoPedido; 
 
     }
 
@@ -43,8 +41,6 @@ public class GranLogistica extends Logistica // Hereda de la clase Logistica
     public String Transportar() {
         tramos = distanciaKm / 50;
         restoKm = distanciaKm % 50;
-        // String tramosString = String.valueOf(tramos);
-        // Producto producto = new Producto("nombre", 0.0, 0.0, esPerecedero);
         if (esPerecedero == true && distanciaKm > 100) {
             System.out.println("------------------------------------------------");
             System.out.println("Enviando producto a " + ciudad + ".\n");
@@ -68,9 +64,7 @@ public class GranLogistica extends Logistica // Hereda de la clase Logistica
             double costeTramo = 0.5 * costeProducto * pesoArticulo;
             costeTotal += costeTramo;
         }
-        //costeTotal = Math.round(costeTotal);
         String costeString = Double.toString(costeTotal);
         return "El coste de la Gran logistica es de: " + costeString + " Euros.";
-    }
-    
+    }  
 }

@@ -1,5 +1,10 @@
 import java.util.Hashtable;
-
+/**
+ * Clase InformeProductos que contiene un método que muestra al usuario
+ * administrador información sobre las empresas de tranporte.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
+ */
 public class InformeProductos {
     //Diccionario  
     Hashtable<String, Integer> beneficiosProducto = new Hashtable<String, Integer>();

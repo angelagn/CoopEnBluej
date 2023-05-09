@@ -1,10 +1,10 @@
 import java.util.Hashtable;
 
 /**
- * Write a description of class InformeEmpresa here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Clase InformeEmpresa que contiene un método que muestra al usuario
+ * administrador información sobre las empresas de tranporte.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class InformeEmpresa{
     //Importes obtenidos por cada una de las empresas de logística.

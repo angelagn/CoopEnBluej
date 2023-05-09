@@ -10,17 +10,16 @@ public class Logistica extends Coste
     // instance variables - replace the example below with your own
     private int distanciaKm;
     private  boolean esPerecedero;
-    private String tipoLogistica;
     private double pesoPedido;
     public double precioArticulo;
-    private int tramos;
+
 
     /**
      * Constructor for objects of class Logistica
      */
     public Logistica(int distanciaKm)
     {
-        // initialise instance variables
+        // inicializa variables de instancia
         super(); 
          this.distanciaKm = distanciaKm;
          this.esPerecedero = esPerecedero;

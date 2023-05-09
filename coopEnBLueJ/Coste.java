@@ -1,27 +1,18 @@
 
 /**
- * Write a description of class Coste here.
- * 
- * @author (your name)
- * @version (a version number or a date)
+ * Clase Coste que hereda de la clase Producto y calcula el coste a pagar al proveedor y 
+ * el coste de la logistica.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class Coste extends Producto {
-    // instance variables - replace the example below with your own
-    private double coste;
-    private static int distanciaKm;
 
-    private double costeFijoKm;
-    private int tramos;
+    // variables de instancia
+    private static int distanciaKm;
     private double pesoPedido;
     private double precioArticulo;
     private boolean esPerecedero;
-    // public double pagar;
-
-    /**
-     * Constructor for objects of class Coste
-     */
-    // String nombreArticulo, double precioArticulo, double pesoArticulo, boolean
-    // esPerecederoArticulo
+  
     public Coste() {
         super("Arroz", distanciaKm, 0, true); // String double, double, boolean
         this.precioArticulo = precioArticulo;
@@ -48,7 +39,6 @@ public class Coste extends Producto {
     public String calcularCosteLogistica() {
 
         return "Coste Logistica clase coste:";
-
     }
 
 }

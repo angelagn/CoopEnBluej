@@ -1,7 +1,6 @@
 
 /**
  * Clase GestionProductos que realiza las acciones de calcular los importes a cada tipo de cliente.
- * 
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)
  */
@@ -50,13 +49,4 @@ public class GestionProductos
         precioDistribuidor = precioRefKg + beneficiosDistribuidor;
         return precioDistribuidor;
     }
-    
-    /**Funcion que calcula el pago que recibe cada productor
-       */
-    // public double PagarAProductor(double precioRefKg, double kilos){
-    //     totalPagar = precioRefKg * kilos;
-    //     return totalPagar;
-    // }
-    
-    
 }

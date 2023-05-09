@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class ProductorFederado here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Clase ProductorFederado que extiende de productor y contiene el constructor de la clase
+ * para que pueda ser heredado por otras clses.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
  */
 public class ProductorFederado extends Productor
 {

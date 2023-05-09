@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * Clase Pedido que pide al proveedor que ingrese los productos 
- * y los pone en una lista.
+ * y los pone en una cesta de productos seleccionados.
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)
  */
@@ -18,10 +18,7 @@ public class Pedido
         
     }
     
-    // public void agregarProducto(Producto producto)
-    // {
-        // listaProductos.add(producto);
-    // }
+
     //Metodo que añade un producto a la lista
     public void ListaProductosAdd(){
         Scanner sc = new Scanner(System.in);
@@ -62,6 +59,4 @@ public class Pedido
         System.out.println(producto.getNombreProducto());
     }
     }
-    
-   
 }

@@ -9,10 +9,9 @@ public class PequenaLogistica extends Logistica
 {
     // variables de instancia
        private int distanciaKm;
-       private boolean esPerecedero;
        private double costeFijoKm = 0.3; 
        private double coste;
-       private String distanciaString;
+   
     /** Constructor inicializa las variables
      */
     public PequenaLogistica( int distanciaKm)
@@ -38,7 +37,7 @@ public class PequenaLogistica extends Logistica
      */
     @Override
     public String calcularCosteLogistica(){
-        costeFijoKm = 0.3 ;
+        costeFijoKm = 3;
         coste = costeFijoKm * distanciaKm; 
         return "Coste Pequeña Logistica: " + coste + " Euros.";
     }

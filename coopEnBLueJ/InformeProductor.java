@@ -1,4 +1,10 @@
 import java.util.Hashtable;
+/**
+ * Clase InformeProductor que contiene un método que muestra al usuario
+ * administrador información sobre el rendimiento de la cooperativa.
+ * @author (Angela Alexandra Guzman Garcia) 
+ * @version (001)
+ */
 
 public class InformeProductor {
     //Diccionario  

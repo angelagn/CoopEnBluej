@@ -10,9 +10,9 @@ import java.util.Scanner;
  */
 public class GestionPedidos
 {
-    /**El metodo ListaProductos, crea elementos tipo Producto y luego los 
-     * añade a una lista, para finalmente mostrar la lista al usuario.
-     */
+        /**El metodo ListaProductos, crea elementos tipo Producto y luego los 
+         * añade a una lista, para finalmente mostrar la lista al usuario.
+         */
         String agregarMas = "";
         String prodIngresado = "";
         //Declara una lista de productos
@@ -23,12 +23,12 @@ public class GestionPedidos
     public void ListaProductos(){
         //Crea elementos tipo Producto
         Producto manzana = new Producto("Manzana", 3.4, 2, true);
-        Producto pera = new Producto("Pera", 2, 1.5, true);
-        Producto algodon = new Producto("Algodon", 4, 6, false);
-        Producto pimiento = new Producto("Pimiento", 7, 3, true);
+        Producto pera = new Producto("Pera", 2.1, 1.5, true);
+        Producto algodon = new Producto("Algodon", 4.3, 6, false);
+        Producto pimiento = new Producto("Pimiento", 2.2, 3, true);
         Producto arroz = new Producto("Arroz", 1.4, 2.2, true);
         Producto cebolla = new Producto("Cebolla", 2.4, 2.6, true);
-        Producto brocoli = new Producto("Brocoli", 3.4, 2.5, true);
+        Producto brocoli = new Producto("Brocoli", 1.4, 2.5, true);
 
         //Añade elementos a la lista
         listaProductos.add(manzana);
@@ -83,5 +83,5 @@ public class GestionPedidos
             System.out.println(listaProductos.get(i).getNombreProducto());
         }
     }
-    }
+}
 

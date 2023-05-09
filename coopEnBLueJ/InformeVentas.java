@@ -2,7 +2,7 @@ import java.security.KeyStore.Entry;
 import java.util.Hashtable;
 
 /**
- * Clase    Informes que contiene 
+ * Clase    Informes que contiene el método informe de cantidad vendida para mostrarle al usuario administrador
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)
  */
