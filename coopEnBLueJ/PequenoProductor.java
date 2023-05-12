@@ -50,8 +50,8 @@ public class PequenoProductor extends Productor
         Productor primerProductor = listaPProductores.get(0);
         String nombrePrimerProductor = primerProductor.getNombre();
         String productoPrimerProductor = primerProductor.getProducto();
-        int hectareasPrimerProductor = primerProductor.getHectareas();
-        int toneladasPrimerProductor = primerProductor.getToneladas();
+        double hectareasPrimerProductor = primerProductor.getHectareas();
+        double toneladasPrimerProductor = primerProductor.getToneladas();
          
     }
 }

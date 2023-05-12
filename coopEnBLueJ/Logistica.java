@@ -1,6 +1,6 @@
 
 /**
- * Clase Producto que contiene las caracteristicas necesarias de cada producto para que pueda ser gestionado en la cooperativa.
+ * Clase Logistica que contiene metodos get y set para realizar la logistica.
  * 
  * @author (Angela Alexandra Guzman Garcia) 
  * @version (001)

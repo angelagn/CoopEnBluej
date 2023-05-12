@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=PequenoProductor
-comment0.text=\n\ Write\ a\ description\ of\ class\ Peque\u00F1oProductor\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Clase\ PequenoProductor\ que\ realiza\ acciones\ con\ peque\u00F1os\ productores\ \n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
 comment1.params=nombre\ producto\ hectareas\ toneladas
 comment1.target=PequenoProductor(java.lang.String,\ java.lang.String,\ int,\ int)
 comment1.text=\ Se\ llama\ al\ constructor\ de\ la\ super\ clase\ Productor\ a\ traves\ de\ la\ palabra\ reservada\ super\n

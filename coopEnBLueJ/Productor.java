@@ -9,10 +9,10 @@ public class Productor
     // Variables
     private String nombre;
     private String producto;
-    private int hectareas;
-    private int toneladas;
+    private double hectareas;
+    private double toneladas;
     
-    public Productor(String nombre, String producto, int hectareas, int toneladas) {
+    public Productor(String nombre, String producto, double hectareas, double toneladas) {
         this.nombre = nombre;
         this.producto = producto;
         this.hectareas = hectareas;
@@ -37,19 +37,19 @@ public class Productor
         this.producto = producto;
     }
     
-    public int getHectareas() {
+    public double getHectareas() {
         return hectareas;
     }
     
-    public void setHectareas(int hectareas) {
+    public void setHectareas(double hectareas) {
         this.hectareas = hectareas;
     }
     
-    public int getToneladas() {
+    public double getToneladas() {
         return toneladas;
     }
     
-    public void setToneladas(int toneladas) {
+    public void setToneladas(double toneladas) {
         this.toneladas = toneladas;
     }
 }
