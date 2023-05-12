@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Logistica
+comment0.text=\n\ Clase\ Logistica\ que\ contiene\ metodos\ get\ y\ set\ para\ realizar\ la\ logistica.\n\ \n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment1.params=distanciaKm
+comment1.target=Logistica(int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Logistica\n
+comment2.params=
+comment2.target=int\ getDistancia()
+comment3.params=distanciaKm
+comment3.target=void\ setDistancia(int)
+comment4.params=
+comment4.target=boolean\ getPerecedero()
+comment5.params=esPerecedero
+comment5.target=void\ setEsPerecedero(boolean)
+comment6.params=
+comment6.target=java.lang.String\ Transportar()
+numComments=7

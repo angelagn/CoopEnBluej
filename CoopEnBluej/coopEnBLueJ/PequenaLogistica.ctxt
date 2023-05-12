@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=PequenaLogistica
+comment0.text=\n\ Clase\ PequenaLogistica\ que\ hereda\ los\ metodos\ Transportar\ y\ calcularCosteLogistica\ de\ la\ \n\ clase\ logistica,\ aplica\ polimorfismosobreescribiendo\ los\ metodos\ para\ ajustar\ a\ las\ caracteristicas\ \n\ particulares\ de\ la\ gran\ logistica.\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment1.params=distanciaKm
+comment1.target=PequenaLogistica(int)
+comment1.text=\ Constructor\ inicializa\ las\ variables\n
+comment2.params=
+comment2.target=java.lang.String\ Transportar()
+comment2.text=Se\ sobrescribe\ el\ metodo\ transportar\ para\ ajustar\ a\ la\ peque\u00F1a\ logistica\n
+comment3.params=
+comment3.target=java.lang.String\ calcularCosteLogistica()
+comment3.text=Se\ sobrescribe\ el\ metodo\ calcularCosteLogistica\ para\ ajustar\ a\ Gran\ Logistica\n
+comment4.params=
+comment4.target=void\ TotalLogistica()
+numComments=5

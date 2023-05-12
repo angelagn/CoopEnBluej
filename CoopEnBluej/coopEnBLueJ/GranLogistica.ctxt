@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=GranLogistica
+comment0.text=\n\ Clase\ GranLogistica\ que\ contiene\ los\ metodos\ Transportar\ y\n\ calcularCosteLogistica\n\ sobreescritos\ con\ polimorfismo\ para\ ajustar\ a\ las\ caracteristicas\n\ particulares\n\ de\ la\ gran\ logistica\n\ \n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\n\ @version\ (001)\n
+comment1.params=ciudad\ distanciaKm
+comment1.target=GranLogistica(java.lang.String,\ int)
+comment1.text=\n\ Constructor\ inicializa\ las\ variables\n
+comment2.params=
+comment2.target=java.lang.String\ Transportar()
+comment2.text=\n\ Se\ sobrescribe\ el\ metodo\ transportar\ para\ ajustar\ a\ Gran\ Logistica\n
+comment3.params=pesoArticulo\ distanciaKm\ costeProducto
+comment3.target=java.lang.String\ calcularCosteLogistica(double,\ int,\ double)
+comment3.text=\n\ Se\ sobrescribe\ el\ metodo\ calcularCosteLogistica\ para\ ajustar\ a\ Gran\ Logistica\n
+numComments=4

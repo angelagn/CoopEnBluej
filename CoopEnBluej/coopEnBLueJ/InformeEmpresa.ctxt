@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=InformeEmpresa
+comment0.text=\n\ Clase\ InformeEmpresa\ que\ contiene\ un\ m\u00E9todo\ que\ muestra\ al\ usuario\n\ administrador\ informaci\u00F3n\ sobre\ las\ empresas\ de\ tranporte.\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment1.params=
+comment1.target=void\ infoEmpresas()
+numComments=2

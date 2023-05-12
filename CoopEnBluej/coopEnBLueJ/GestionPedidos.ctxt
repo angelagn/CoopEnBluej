@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=GestionPedidos
+comment0.text=\n\ Clase\ GestionPedidos\ gestiona\ los\ productos\ \n\ disponibles\ en\ la\ cooperativa\ para\ comprar.\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment1.params=
+comment1.target=void\ ListaProductos()
+comment2.params=
+comment2.target=void\ Cesta()
+numComments=3

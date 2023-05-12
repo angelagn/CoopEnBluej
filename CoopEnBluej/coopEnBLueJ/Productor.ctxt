@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Productor
+comment0.text=\n\ Clase\ Productor,\ contiene\ los\ detalles\ de\ cada\ producto\ y\ los\ m\u00E9todos\ set\ y\ get.\n\ @author\ (Angela\ Alexandra\ Guzman\ Garcia)\ \n\ @version\ (001)\n
+comment1.params=nombre\ producto\ hectareas\ toneladas
+comment1.target=Productor(java.lang.String,\ java.lang.String,\ double,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=nombre
+comment3.target=void\ setNombre(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getProducto()
+comment5.params=producto
+comment5.target=void\ setProducto(java.lang.String)
+comment6.params=
+comment6.target=double\ getHectareas()
+comment7.params=hectareas
+comment7.target=void\ setHectareas(double)
+comment8.params=
+comment8.target=double\ getToneladas()
+comment9.params=toneladas
+comment9.target=void\ setToneladas(double)
+numComments=10
